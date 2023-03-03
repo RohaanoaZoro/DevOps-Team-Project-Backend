@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "dda177f3-fb37-4961-a64e-d2d74936fb0a",
+		"name": "DevOps_Project_Rohaaan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddProperty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"greenscore\":2.3,\n    \"address\":\"Hilversum\",\n    \"property-values\":{\n        \"co2\":2361,\n        \"waste\":102,\n        \"clean-energy\":10030,\n        \"area\":356,\n        \"property-type\":\"residential\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/addProperty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"addProperty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/getProperty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/getProperty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getProperty"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
